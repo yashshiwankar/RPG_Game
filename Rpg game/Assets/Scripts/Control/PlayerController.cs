@@ -1,7 +1,7 @@
 using UnityEngine;
-
 using RPG.Movement;
 using RPG.Combat;
+using RPG.Core;
 
 namespace RPG.Control
 {
@@ -10,15 +10,18 @@ namespace RPG.Control
         Mover mover;
         Fighter fighter;
         Ray ray;
-        bool isMoving = false;
-        void Start()
+        //bool isMoving = false;
+        Health health;
+        void Awake()
         {
+            health = GetComponent<Health>();
             mover = GetComponent<Mover>();
             fighter = GetComponent<Fighter>();
         }
 
         void Update()
         {
+            if(health.IsDead())  return;
             if(InteractWithCombat()) return;
             if(InteractWithMovement()) return;
             print("Nothing to do");
@@ -30,10 +33,15 @@ namespace RPG.Control
             foreach (RaycastHit hit in hits)
             {
                 CombatTarget target = hit.collider.GetComponent<CombatTarget>();
+                
                 if (target == null) continue;
                 
-                if (Input.GetMouseButtonDown(1))            
-                    fighter.Attack(target);
+                if(fighter.CanAttack(target.gameObject) == false) continue;
+                
+                if (Input.GetMouseButton(1))
+                {
+                    fighter.Attack(target.gameObject);
+                }      
 
 
                 return true;
@@ -49,7 +57,7 @@ namespace RPG.Control
                 //target.position = hit.point;
                 if (Input.GetMouseButton(0))
                 {
-                    mover.StarMoveAction(hit.point);
+                    mover.StarMoveAction(hit.point, 1f);
                 }
                 return true;
             }
