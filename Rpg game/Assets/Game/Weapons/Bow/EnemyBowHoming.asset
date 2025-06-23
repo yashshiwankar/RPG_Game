@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 985ea5087a5410b44983343ed0dcbb73, type: 3}
+  m_Name: EnemyBowHoming
+  m_EditorClassIdentifier: 
+  equippedWeaponPrefab: {fileID: 2141875982981848710, guid: 03e9b6494b1afba4993f22fe355c3c25, type: 3}
+  projectile: {fileID: 3229135117362449087, guid: b6f1de5820c945943bae49c088e0b565, type: 3}
+  weaponAnimatiorOverrideController: {fileID: 22100000, guid: b4fdb4a78495bcc4da8acca3ba4de505, type: 2}
+  range: 20
+  weaponDamage: 5
+  isRightHanded: 0

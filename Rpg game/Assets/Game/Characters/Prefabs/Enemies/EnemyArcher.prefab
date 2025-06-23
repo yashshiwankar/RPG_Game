@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &297603407463977157
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1868622699120717270, guid: 9a7d0291b87dbf04fa0c94fb0c34737e, type: 3}
+      propertyPath: m_Name
+      value: EnemyArcher
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857427845800069753, guid: 9a7d0291b87dbf04fa0c94fb0c34737e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857427845800146721, guid: 9a7d0291b87dbf04fa0c94fb0c34737e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857427845800162663, guid: 9a7d0291b87dbf04fa0c94fb0c34737e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857427845800195805, guid: 9a7d0291b87dbf04fa0c94fb0c34737e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857427845800246065, guid: 9a7d0291b87dbf04fa0c94fb0c34737e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857427845811615041, guid: 9a7d0291b87dbf04fa0c94fb0c34737e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ccae2dc6cf6f0c4479b782fedd0c8172, type: 2}
+    - target: {fileID: 2857427845811638165, guid: 9a7d0291b87dbf04fa0c94fb0c34737e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfbe2e8b331e2cc42be1591f949c0e41, type: 2}
+    - target: {fileID: 3499337634062756835, guid: 9a7d0291b87dbf04fa0c94fb0c34737e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3499337634062756835, guid: 9a7d0291b87dbf04fa0c94fb0c34737e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3499337634062756835, guid: 9a7d0291b87dbf04fa0c94fb0c34737e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3499337634062756835, guid: 9a7d0291b87dbf04fa0c94fb0c34737e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3499337634062756835, guid: 9a7d0291b87dbf04fa0c94fb0c34737e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3499337634062756835, guid: 9a7d0291b87dbf04fa0c94fb0c34737e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3499337634062756835, guid: 9a7d0291b87dbf04fa0c94fb0c34737e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3499337634062756835, guid: 9a7d0291b87dbf04fa0c94fb0c34737e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3499337634062756835, guid: 9a7d0291b87dbf04fa0c94fb0c34737e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3499337634062756835, guid: 9a7d0291b87dbf04fa0c94fb0c34737e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4702373348528090322, guid: 9a7d0291b87dbf04fa0c94fb0c34737e, type: 3}
+      propertyPath: defaultWeaponPrefab
+      value: 
+      objectReference: {fileID: 11400000, guid: 50efbea7925c342458b4b73d666c7880, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9a7d0291b87dbf04fa0c94fb0c34737e, type: 3}

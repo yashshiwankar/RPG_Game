@@ -1,7 +1,6 @@
 using UnityEngine;
 using RPG.Movement;
 using RPG.Core;
-using Unity.VisualScripting;
 
 namespace RPG.Combat
 {
@@ -25,7 +24,7 @@ namespace RPG.Combat
         }
         void Start()
         {
-            currentWeapon = defaultWeaponPrefab;
+            EquipWeapon(defaultWeaponPrefab);
         }
         private void Update()
         {
@@ -107,6 +106,12 @@ namespace RPG.Combat
             target.TakeDamage(currentWeapon.GetDamage());
         }
 
+        //Animation Event - Shoot
+        void Shoot()
+        {
+            if (target == null) return;
+            currentWeapon.LaunchProjectile(rightHandTransform, leftHandTransform, target);
+        }
     }
 
 }
